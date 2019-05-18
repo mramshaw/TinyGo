@@ -1,0 +1,5 @@
+# Ignore all .deb packages
+**.deb
+
+# Ignore our compiled WASM
+src/wasm.wasm
