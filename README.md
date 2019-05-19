@@ -21,6 +21,9 @@ Both of the above quotes are from:
 
     http://github.com/tinygo-org/tinygo
 
+TinyGo was originally started by Ayke van Laëthem, who was a contributor to [MicroPython](http://github.com/micropython/micropython/)
+(a version of Python that runs on microcontrollers) and other projects in the embedded space.
+
 ## Prerequisites
 
 Requires __Go v1.11__ or greater.
@@ -111,6 +114,8 @@ We will try it out for WASM as follows:
 
 #### Compile WASM
 
+Compile our Golang code to WASM as follows:
+
 ```bash
 $ cd src
 $ /usr/local/tinygo/bin/tinygo build -o ./wasm.wasm -target wasm ./wasm.go
@@ -158,6 +163,15 @@ Getting started with TinyGo:
     http://tinygo.org/getting-started/linux/
 
 #### LLVM
+
+LLVM is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written
+in arbitrary programming languages (among them are Kotlin, Lua, Rust and Swift). Despite its name, it has
+nothing to do with virtual machines.
+
+TinyGo takes the Golang [SSA](http://en.wikipedia.org/wiki/Static_single_assignment_form) and passes it
+to the LLVM toolchain. For more details the following article is worth a look:
+
+    http://aykevl.nl/2019/04/llvm-from-go
 
 Probably the definitive site for learning about LLVM:
 
