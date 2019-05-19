@@ -1,14 +1,17 @@
 # TinyGo
 
-Having compiled Go programs against [MUSL](http://www.musl-libc.org/), dabbled with
-a [Raspberry Pi](https://github.com/mramshaw/Speech-Recognition#raspberry-pi), and
-experimented with [MQTT](https://github.com/mramshaw/MQTT_and_mosquitto) (an IoT
-protocol for sensors and devices such as the Arduino or Raspberry Pi) TinyGo sounded
-like it was worth a look.
+As a longtime [Golang](http://github.com/mramshaw/Golang) fan, I have cross-compiled
+Go programs against [MUSL](#musl) and experimented with
+[MQTT](https://github.com/mramshaw/MQTT_and_mosquitto)
+(an IoT protocol for sensors and devices such as the Arduino or Raspberry Pi).
+I have also experimented with the
+[Raspberry Pi](https://github.com/mramshaw/Speech-Recognition#raspberry-pi)
+(a single-board microcomputer) so TinyGo sounded like it was worth a look.
 
 ## What is TinyGo?
 
-> TinyGo is a Go compiler intended for use in small places such as microcontrollers, WebAssembly (WASM), and command-line tools.
+> TinyGo is a Go compiler intended for use in small places such as microcontrollers,
+> WebAssembly (WASM), and command-line tools.
 
 And:
 
@@ -74,11 +77,11 @@ tinygo version 0.5.0 linux/amd64
 $
 ```
 
-[By default tinygo is installed in __/usr/local/tinygo__, with __root__ permissions but globally executable.]
+[By default TinyGo is installed in __/usr/local/tinygo/__ with __root__ permissions but globally executable.]
 
 ## Targets
 
-By default, TinyGo can be used to compile to [WASM](http://webassembly.org/).
+Straight out of the box, TinyGo can be used to compile to [WebAssembly](#webassembly).
 
 For hardware platforms such as ARM or AVR there are additional requirements.
 
@@ -140,7 +143,31 @@ And test. The results should look as follows:
 
 ![WASM working](images/WASM_working.png)
 
-## MUSL
+## Reference
+
+Some useful references are listed below.
+
+#### TinyGo references
+
+The TinyGo repo can be found here:
+
+    http://github.com/tinygo-org/tinygo
+
+Getting started with TinyGo:
+
+    http://tinygo.org/getting-started/linux/
+
+#### LLVM
+
+Probably the definitive site for learning about LLVM:
+
+    http://llvm.org/
+
+#### MUSL
+
+Probably the definitive site for learning about MUSL:
+
+    http://www.musl-libc.org/
 
 MUSL is used as the standard C library by the Alpine Linux distribution.
 
@@ -170,19 +197,20 @@ For more information, please refer to the following link:
 Likewise, I expect TinyGo to be merely a ***partial*** implementation of Go, as is usely the
 case with micro-languages.
 
-## Reference
+#### WebAssembly
 
-The TinyGo repo can be found here:
+> WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine.
+> Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust,
+> enabling deployment on the web for client and server applications.
 
-    http://github.com/tinygo-org/tinygo
+    http://webassembly.org
 
-Getting started with TinyGo:
+WebAssembly seems to be primarily associated with Rust but has been a topic of interest in the
+Golang community for some time. For instance:
 
-    http://tinygo.org/getting-started/linux/
+    http://changelog.com/gotime/bonus-77
 
-LLVM:
-
-    http://llvm.org/
+[At various Go meetups I have attended, WASM has been discussed.]
 
 ## Credits
 
