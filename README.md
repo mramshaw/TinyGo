@@ -82,6 +82,54 @@ $
 
 [By default TinyGo is installed in __/usr/local/tinygo/__ with __root__ permissions but globally executable.]
 
+## Options
+
+Find out more about TinyGo and its capabilities as follows:
+
+```bash
+$ /usr/local/tinygo/bin/tinygo help
+TinyGo is a Go compiler for small places.
+version: 0.5.0
+usage: /usr/local/tinygo/bin/tinygo command [-printir] [-target=<target>] -o <output> <input>
+
+commands:
+  build: compile packages and dependencies
+  run:   compile and run immediately
+  flash: compile and flash to the device
+  gdb:   run/flash and immediately enter GDB
+  clean: empty cache directory (/home/owner/.cache/tinygo)
+  help:  print this help text
+
+flags:
+  -cflags string
+        additional cflags for compiler
+  -dumpssa
+        dump internal Go SSA
+  -gc string
+        garbage collector to use (none, dumb, marksweep)
+  -ldflags string
+        additional ldflags for linker
+  -no-debug
+        disable DWARF debug symbol generation
+  -o string
+        output filename
+  -ocd-output
+        print OCD daemon output during debug
+  -opt string
+        optimization level: 0, 1, 2, s, z (default "z")
+  -port string
+        flash port (default "/dev/ttyACM0")
+  -printir
+        print LLVM IR
+  -size string
+        print sizes (none, short, full)
+  -target string
+        LLVM target
+  -wasm-abi string
+        WebAssembly ABI conventions: js (no i64 params) or generic (default "js")
+$
+```
+
 ## Targets
 
 Straight out of the box, TinyGo can be used to compile to [WebAssembly](#webassembly).
