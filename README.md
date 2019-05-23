@@ -8,6 +8,30 @@ I have also experimented with the
 [Raspberry Pi](https://github.com/mramshaw/Speech-Recognition#raspberry-pi)
 (a single-board microcomputer) so TinyGo sounded like it was worth a look.
 
+## Contents
+
+The contents are as follows:
+
+* [What is TinyGo?](#what-is-tinygo)
+* [Prequisites](#prequisites)
+* [Installation](#installation)
+* [Building](#building)
+* [Options](#options)
+* [Targets](#targets)
+    * [ARM](#arm)
+    * [AVR](#avr)
+* [Running](#running)
+    * [Compile WASM](#compile-wasm)
+    * [Run webserver](#run-webserver)
+    * [Open browser](#open-browser)
+* [Reference](#reference)
+    * [TinyGo references](#tinygo-references)
+    * [LLVM](#llvm)
+    * [MUSL](#musl)
+    * [WebAssembly](#webassembly)
+* [Credits](#credits)
+* [To Do](#to-do)
+
 ## What is TinyGo?
 
 > TinyGo is a Go compiler intended for use in small places such as microcontrollers,
@@ -81,6 +105,10 @@ $
 ```
 
 [By default TinyGo is installed in __/usr/local/tinygo/__ with __root__ permissions but globally executable.]
+
+## Building
+
+Building TinyGo is straightforward, but on Ubuntu will require __cmake__ & __cmake-data__ as well as __ninja-build__.
 
 ## Options
 
@@ -261,6 +289,10 @@ case with micro-languages.
 
 #### WebAssembly
 
+For those familiar with [Java applet](http://en.wikipedia.org/wiki/Java_applet) fundamentals,
+WebAssembly looks very much like the portable [Java bytecode](http://en.wikipedia.org/wiki/Java_bytecode)
+that enabled Java applets to run in Java-enabled browsers.
+
 > WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine.
 > Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust,
 > enabling deployment on the web for client and server applications.
@@ -282,4 +314,6 @@ Inspired by this podcast:
 
 ## To Do
 
+- [x] Add notes on compiling TinyGo
+- [x] Add string reversal code
 - [ ] More testing

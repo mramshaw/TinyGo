@@ -1,6 +1,6 @@
 # Example Code
 
-Apart from __wasm_exec.js__, this code is copied from:
+Apart from __wasm_exec.js__, this code originated from:
 
     http://github.com/tinygo-org/tinygo/tree/master/src/examples/wasm/export
 
