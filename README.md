@@ -31,6 +31,7 @@ The contents are as follows:
     * [LLVM](#llvm)
     * [MUSL](#musl)
     * [WebAssembly](#webassembly)
+* [Alternatives](#alternatives)
 * [Credits](#credits)
 * [To Do](#to-do)
 
@@ -311,6 +312,30 @@ Golang community for some time. For instance:
 
 [At various Go meetups I have attended, WASM has been discussed.]
 
+## Alternatives
+
+As usual, there are alternative solutions - some of which are listed below.
+
+#### EMBD
+
+EMBD supports the Raspberry Pi, BeagleBone Black, and CHIP. There are (possibly) other options.
+
+EMBD is sponsored by [Thoughtworks](http://www.thoughtworks.com/).
+
+[It appears to be defunct, but is probably still worth a look.]
+
+Home page:
+
+    http://embd.kidoman.io/
+
+Source code (Last updated 7 May 2017):
+
+    http://github.com/kidoman/embd
+
+Go Doc:
+
+    http://godoc.org/github.com/kidoman/embd
+
 ## Credits
 
 Inspired by this podcast:
@@ -319,6 +344,7 @@ Inspired by this podcast:
 
 ## To Do
 
+- [x] Add Alternatives
 - [x] Add notes on compiling TinyGo
 - [x] Add string reversal code
 - [ ] More testing
