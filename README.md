@@ -1,5 +1,7 @@
 # TinyGo
 
+![TinyGo logo](images/TinyGo.png)
+
 As a longtime [Golang](http://github.com/mramshaw/Golang) fan, I have cross-compiled
 Go programs against [MUSL](#musl) and experimented with
 [MQTT](https://github.com/mramshaw/MQTT_and_mosquitto)
@@ -13,7 +15,7 @@ I have also experimented with the
 The contents are as follows:
 
 * [What is TinyGo?](#what-is-tinygo)
-* [Prequisites](#prequisites)
+* [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Building](#building)
 * [Options](#options)
