@@ -240,6 +240,12 @@ Getting started with TinyGo:
 
     http://tinygo.org/getting-started/linux/
 
+How much of Go is implemented in TinyGo:
+
+    http://tinygo.org/lang-support/
+
+[Personal testing also indicates that __runes__ are not yet fully supported in TinyGo.]
+
 #### LLVM
 
 LLVM is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written
@@ -285,9 +291,6 @@ Nevertheless, if used carefully it can be used as a replacement for ***most*** u
 For more information, please refer to the following link:
 
     http://wiki.musl-libc.org/compatibility.html
-
-Likewise, I expect TinyGo to be merely a ***partial*** implementation of Go, as is usely the
-case with micro-languages.
 
 #### WebAssembly
 
