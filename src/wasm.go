@@ -4,9 +4,11 @@ import (
 	"syscall/js"
 )
 
+// The empty main function is required (http://github.com/tinygo-org/tinygo/issues/186)
 func main() {
 }
 
+// The next line looks like a Go pragma but is not; it's a TinyGo directive for WASM
 //go:export reverseBytewise
 func reverseBytewise(s string) string {
 	r := []byte(s)
@@ -16,6 +18,7 @@ func reverseBytewise(s string) string {
 	return string(r)
 }
 
+// The next line looks like a Go pragma but is not; it's a TinyGo directive for WASM
 //go:export update
 func update() {
 	document := js.Global().Get("document")
