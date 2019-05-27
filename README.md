@@ -32,6 +32,8 @@ The contents are as follows:
     * [MUSL](#musl)
     * [WebAssembly](#webassembly)
 * [Alternatives](#alternatives)
+    * [EMBD](#embd)
+    * [MicroPython](#micropython)
 * [Credits](#credits)
 * [To Do](#to-do)
 
@@ -335,6 +337,18 @@ Source code (Last updated 7 May 2017):
 Go Doc:
 
     http://godoc.org/github.com/kidoman/embd
+
+#### MicroPython
+
+It's Python-like (Python 3 specifically) rather than Golang-like, but may be useful.
+
+Home page:
+
+    http://micropython.org/
+
+Source code (appears to be actively maintained):
+
+    http://github.com/micropython/micropython/
 
 ## Credits
 
