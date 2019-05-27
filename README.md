@@ -34,6 +34,7 @@ The contents are as follows:
 * [Alternatives](#alternatives)
     * [EMBD](#embd)
     * [MicroPython](#micropython)
+    * [periph](#periph)
 * [Credits](#credits)
 * [To Do](#to-do)
 
@@ -193,6 +194,10 @@ Arduino (AVR) devices apparently require __gcc-avr__, __avr-libc__ and __avrdude
 
 We will try it out for WASM as follows:
 
+1. [Compile WASM](#compile-wasm)
+2. [Run webserver](#run-webserver)
+3. [Open browser](#open-browser)
+
 #### Compile WASM
 
 Compile our Golang code to WASM as follows:
@@ -242,6 +247,16 @@ The TinyGo repo can be found here:
 Getting started with TinyGo:
 
     http://tinygo.org/getting-started/linux/
+
+Using TinyGo for WebAssembly:
+
+    http://tinygo.org/webassembly/webassembly/
+
+[It appears to be late-compiled, as you can mix and match JavaScript and TinyGo function calls.]
+
+Heap Allocation:
+
+    http://tinygo.org/compiler-internals/heap-allocation/
 
 How much of Go is implemented in TinyGo:
 
@@ -346,9 +361,25 @@ Home page:
 
     http://micropython.org/
 
-Source code (appears to be actively maintained):
+Source code:
 
     http://github.com/micropython/micropython/
+
+#### periph
+
+It's a Google project.
+
+Home page:
+
+    http://periph.io/
+
+Source code:
+
+    https://github.com/google/periph/
+
+Supported devices:
+
+    http://periph.io/device/
 
 ## Credits
 
